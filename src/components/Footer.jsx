@@ -1,10 +1,11 @@
 import "./Footer.scss";
-
+import logoFooter from "../assets/LOGO_footer.png";
 function Footer() {
   return (
     <footer className="footer">
       <div className="footer-container">
-        <p>&copy; 2020 Kasa. Tous droits réservés</p>
+        <img src={logoFooter} alt="Kasa" />
+        <p>&copy; 2020 Kasa. All rights reserved</p>
       </div>
     </footer>
   );

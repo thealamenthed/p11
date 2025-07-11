@@ -15,7 +15,12 @@ function Home() {
     <Layout>
       <div className="home">
         <section className="hero">
-          <h1>Chez vous, partout et ailleurs</h1>
+          <h1 className="hero-title-desktop">Chez vous, partout et ailleurs</h1>
+          <h1 className="hero-title-mobile">
+            Chez vous,
+            <br />
+            <span className="hero-sub">partout et ailleurs</span>
+          </h1>
         </section>
 
         <section className="logements-grid">

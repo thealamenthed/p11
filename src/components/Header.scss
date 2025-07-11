@@ -2,7 +2,6 @@
 
 .header {
   background-color: $white;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   padding: 1rem 0;
 
   .header-container {
@@ -30,10 +29,26 @@
       color: $text-color;
       text-decoration: none;
       font-weight: 500;
-      transition: color 0.3s ease;
+      border-bottom: 2px solid transparent;
+      transition: border-color 0.3s ease;
+      font-size: 16px;
 
-      &:hover {
-        color: $primary-color;
+      &.active {
+        border-color: $text-color;
+      }
+    }
+  }
+
+  @media (max-width: 600px) {
+    padding: 0.5rem 0;
+    .logo img {
+      width: 145px;
+      height: 46.88px;
+    }
+    .navigation {
+      gap: 1rem;
+      .nav-link {
+        font-size: 12px;
       }
     }
   }
