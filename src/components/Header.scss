@@ -1,0 +1,40 @@
+@use "../App.scss" as *;
+
+.header {
+  background-color: $white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 1rem 0;
+
+  .header-container {
+    @extend .container;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo {
+    text-decoration: none;
+
+    img {
+      width: 210.32px;
+      height: 68px;
+      object-fit: contain;
+    }
+  }
+
+  .navigation {
+    display: flex;
+    gap: 2rem;
+
+    .nav-link {
+      color: $text-color;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: $primary-color;
+      }
+    }
+  }
+}
