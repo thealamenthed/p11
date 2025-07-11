@@ -1,0 +1,81 @@
+@use "../App.scss" as *;
+
+.collapse {
+  margin-bottom: 2rem;
+  border-radius: 8px;
+  overflow: hidden;
+  background: none;
+
+  .collapse-header {
+    width: 100%;
+    background: #ff6060;
+    color: #fff;
+    border: none;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    font-size: 1.3rem;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background 0.2s;
+    position: relative;
+    z-index: 2;
+  }
+
+  .collapse-title {
+    flex: 1;
+    text-align: left;
+  }
+
+  .collapse-arrow {
+    margin-left: 1rem;
+    font-size: 1.5rem;
+    display: inline-block;
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    transform: rotate(0deg);
+    img {
+      width: 24px;
+      height: auto;
+      display: block;
+    }
+  }
+  .collapse-arrow.open {
+    transform: rotate(180deg);
+  }
+
+  .collapse-content {
+    background: #f6f6f6;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    border-radius: 0 0 8px 8px;
+  }
+  .collapse.open .collapse-content {
+    /* max-height géré inline */
+  }
+  .collapse-inner {
+    padding: 1.5rem 2rem;
+    color: #222;
+    font-size: 1.1rem;
+    font-weight: 400;
+  }
+
+  @media (max-width: 600px) {
+    margin-bottom: 1rem;
+    .collapse-header {
+      padding: 0.75rem 1rem;
+      font-size: 13px;
+    }
+    .collapse-arrow img {
+      width: 16px;
+      height: auto;
+    }
+    .collapse-inner {
+      padding: 1rem 1rem;
+      font-size: 1rem;
+    }
+  }
+}
