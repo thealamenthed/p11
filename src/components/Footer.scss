@@ -1,0 +1,12 @@
+@use "../App.scss" as *;
+
+.footer {
+  background-color: $secondary-color;
+  padding: 2rem 0;
+  margin-top: auto;
+
+  .footer-container {
+    @extend .container;
+    text-align: center;
+  }
+}

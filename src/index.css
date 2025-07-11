@@ -3,9 +3,13 @@
   line-height: 1.5;
   font-weight: 400;
 
-  color-scheme: light dark;
+  /* The `color-scheme: light dark;` property in CSS is used to specify the preferred color scheme for
+the webpage. In this case, it indicates that the webpage supports both light and dark color schemes.
+This can be helpful for browsers or devices that allow users to switch between light and dark modes,
+ensuring that the webpage displays correctly in both modes. */
+  /* color-scheme: light dark; */
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  /* background-color: #242424; */
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -18,6 +22,7 @@ a {
   color: #646cff;
   text-decoration: inherit;
 }
+
 a:hover {
   color: #535bf2;
 }
@@ -25,7 +30,7 @@ a:hover {
 body {
   margin: 0;
   display: flex;
-  place-items: center;
+  flex-direction: column;
   min-width: 320px;
   min-height: 100vh;
 }
@@ -46,9 +51,11 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
 }
+
 button:hover {
   border-color: #646cff;
 }
+
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
@@ -59,9 +66,11 @@ button:focus-visible {
     color: #213547;
     background-color: #ffffff;
   }
+
   a:hover {
     color: #747bff;
   }
+
   button {
     background-color: #f9f9f9;
   }

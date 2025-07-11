@@ -1,0 +1,25 @@
+// Variables globales
+$primary-color: #ff6060;
+$secondary-color: #f6f6f6;
+$text-color: #333;
+$white: #ffffff;
+
+// Reset et styles de base
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  color: $text-color;
+  line-height: 1.6;
+}
+
+// Styles globaux
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
