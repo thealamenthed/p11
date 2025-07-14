@@ -32,24 +32,39 @@ function Logement() {
         </div>
 
         <div className="logement-info">
-          <h1>{logement.title}</h1>
-          <p className="location">{logement.location}</p>
-
-          <div className="tags">
-            {logement.tags.map((tag, index) => (
-              <span key={index} className="tag">
-                {tag}
-              </span>
-            ))}
-          </div>
-
-          <div className="rating">
-            <span>Note: {logement.rating}/5</span>
-          </div>
-
-          <div className="host">
-            <img src={logement.host.picture} alt={logement.host.name} />
-            <span>{logement.host.name}</span>
+          <div className="logement-info-row">
+            <div className="logement-info-left">
+              <h1 className="logement-title">{logement.title}</h1>
+              <p className="location">{logement.location}</p>
+              <div className="tags">
+                {logement.tags.map((tag, index) => (
+                  <span key={index} className="tag">
+                    {tag}
+                  </span>
+                ))}
+              </div>
+            </div>
+            <div className="logement-info-right">
+              <div className="host">
+                <span className="host-name">
+                  {logement.host.name.split(" ").map((part, i) => (
+                    <span key={i}>
+                      {part}
+                      <br />
+                    </span>
+                  ))}
+                </span>
+                <img className="host-picture" src={logement.host.picture} alt={logement.host.name} />
+              </div>
+              <div className="rating">
+                {/* Affichage des étoiles à la place du texte */}
+                {Array.from({length: 5}).map((_, i) => (
+                  <span key={i} className={i < Number(logement.rating) ? "star filled" : "star"}>
+                    ★
+                  </span>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
 
