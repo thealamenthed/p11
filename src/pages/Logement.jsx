@@ -4,6 +4,7 @@ import Layout from "../components/Layout";
 import logementsData from "../data/logements.json";
 import Slideshow from "../components/Slideshow";
 import "./Logement.scss";
+import Collapse from "../components/Collapse";
 
 function Logement() {
   const {id} = useParams();
@@ -67,19 +68,22 @@ function Logement() {
             </div>
           </div>
         </div>
+        <div className="logement-details-bottom">
+          <div className="description">
+            <Collapse title="Description">
+              <p>{logement.description}</p>
+            </Collapse>
+          </div>
 
-        <div className="description">
-          <h2>Description</h2>
-          <p>{logement.description}</p>
-        </div>
-
-        <div className="equipments">
-          <h2>Équipements</h2>
-          <ul>
-            {logement.equipments.map((equipment, index) => (
-              <li key={index}>{equipment}</li>
-            ))}
-          </ul>
+          <div className="equipments">
+            <Collapse title="Équipements">
+              <ul>
+                {logement.equipments.map((equipment, index) => (
+                  <li key={index}>{equipment}</li>
+                ))}
+              </ul>
+            </Collapse>
+          </div>
         </div>
       </div>
     </Layout>
