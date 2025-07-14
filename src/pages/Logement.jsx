@@ -2,7 +2,8 @@ import {useState, useEffect} from "react";
 import {useParams, Navigate} from "react-router-dom";
 import Layout from "../components/Layout";
 import logementsData from "../data/logements.json";
-// import "./Logement.scss";
+import Slideshow from "../components/Slideshow";
+import "./Logement.scss";
 
 function Logement() {
   const {id} = useParams();
@@ -27,7 +28,7 @@ function Logement() {
     <Layout>
       <div className="logement-detail">
         <div className="logement-images">
-          <img src={logement.cover} alt={logement.title} />
+          <Slideshow images={logement.pictures} />
         </div>
 
         <div className="logement-info">
