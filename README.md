@@ -30,7 +30,7 @@ En tant que **développeur front-end freelance**, votre mission a été :
 - de suivre strictement les maquettes Figma (design responsive),
 - tout en utilisant des **données JSON simulées** en attendant l’API.
 
-## 🎨 Design & maquettes
+## 🎨 Design & [Maquettes](https://www.figma.com/design/2BZEoBhyxt5IwZgRn0wGsL/Kasa_FR?node-id=4-3&t=KxOnTlPcxAY8ZtKR-0/)
 Le design responsive est basé sur les maquettes Figma fournies par Paul, designer freelance, avec animations CSS et respect des interactions attendues (ex: collapse, galerie).
 
 ---
