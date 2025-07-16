@@ -1,8 +1,40 @@
-# Kasa - Application de location immobilière (React + Vite)
+# Projet 11 -  Développez une application Web avec React et React Router
 
 ## Contexte
 
-Kasa est une application web de location immobilière inspirée d’Airbnb, développée dans le cadre d’un projet front-end. L’objectif est de proposer une plateforme moderne, responsive et accessible pour parcourir, visualiser et réserver des logements.
+Kasa est une application web de location immobilière inspirée d’Airbnb. L’objectif est de proposer une plateforme moderne, responsive et accessible pour parcourir, visualiser et réserver des logements.
+
+## 🎯 Objectifs pédagogiques
+
+- Développer une application React structurée en composants réutilisables.
+- Configurer et gérer la navigation avec **React Router**.
+- Styliser l’application avec **SASS** pour une gestion avancée du CSS.
+- Implémenter des **animations CSS** pour améliorer l'expérience utilisateur.
+- Utiliser **Vite** pour initialiser et optimiser le projet.
+- Travailler avec des données simulées via un fichier **JSON local**, en attendant le back-end.
+
+**Client : Kasa**
+
+Kasa est une entreprise française, leader dans la **location d’appartements entre particuliers**, existant depuis près de 10 ans.  
+Le site initial avait été développé en **ASP.NET**, avec beaucoup de code legacy devenu difficile à maintenir.
+
+La CTO, Laura, a décidé d’entamer une **refonte complète** du site avec une stack JavaScript moderne :
+- **Node.js** pour le back-end (en cours de développement)
+- **React** pour le front-end
+- et un nouveau design Figma fourni par Paul, designer freelance.
+
+En tant que **développeur front-end freelance**, votre mission a été :
+- de démarrer le projet avec **Vite**,
+- de développer tous les composants React et les pages,
+- d'assurer la navigation avec **React Router**,
+- de suivre strictement les maquettes Figma (design responsive),
+- tout en utilisant des **données JSON simulées** en attendant l’API.
+
+🎨 Design & maquettes
+Le design responsive est basé sur les maquettes Figma fournies par Paul, designer freelance, avec animations CSS et respect des interactions attendues (ex: collapse, galerie).
+
+---
+
 
 ## Fonctionnalités
 
