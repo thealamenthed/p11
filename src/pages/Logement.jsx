@@ -1,11 +1,13 @@
 import {useState, useEffect} from "react";
 import {useParams, Navigate} from "react-router-dom";
-import Layout from "../components/layout/Layout";
+import Layout from "../components/layouts/Layout";
 import logementsData from "../data/logements.json";
 import Slideshow from "../components/Slideshow";
 import "./Logement.scss";
 import Collapse from "../components/Collapse";
-import Star from "../components/icons/Star";
+import Star from "../components/atoms/icons/Star";
+import Tags from "../components/molecules/Tags";
+import Host from "../components/Host";
 
 function Logement() {
   const {id} = useParams();
@@ -38,26 +40,10 @@ function Logement() {
             <div className="logement-info-left">
               <h1 className="logement-title">{logement.title}</h1>
               <p className="location">{logement.location}</p>
-              <div className="tags">
-                {logement.tags.map((tag, index) => (
-                  <span key={index} className="tag">
-                    {tag}
-                  </span>
-                ))}
-              </div>
+              <Tags tags={logement.tags} />
             </div>
             <div className="logement-info-right">
-              <div className="host">
-                <span className="host-name">
-                  {logement.host.name.split(" ").map((part, i) => (
-                    <span key={i}>
-                      {part}
-                      <br />
-                    </span>
-                  ))}
-                </span>
-                <img className="host-picture" src={logement.host.picture} alt={logement.host.name} />
-              </div>
+              <Host name={logement.host.name} picture={logement.host.picture} />
               <div className="rating">
                 {Array.from({length: 5}).map((_, i) => (
                   <Star key={i} filled={i < Number(logement.rating)} />
