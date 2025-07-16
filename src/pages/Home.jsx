@@ -1,6 +1,6 @@
 import {useState, useEffect} from "react";
-import {Link} from "react-router-dom";
 import Layout from "../components/layouts/Layout";
+import LogementCard from "../components/LogementCard";
 import logementsData from "../data/logements.json";
 import "./Home.scss";
 
@@ -25,12 +25,7 @@ function Home() {
 
         <section className="logements-grid">
           {logements.map((logement) => (
-            <Link key={logement.id} to={`/logement/${logement.id}`} className="logement-card">
-              <div className="logement-image">
-                <img src={logement.cover} alt={logement.title} />
-              </div>
-              <h3 className="logement-title">{logement.title}</h3>
-            </Link>
+            <LogementCard key={logement.id} logement={logement} />
           ))}
         </section>
       </div>

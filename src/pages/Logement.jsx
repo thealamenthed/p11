@@ -5,8 +5,8 @@ import logementsData from "../data/logements.json";
 import Slideshow from "../components/Slideshow";
 import "./Logement.scss";
 import Collapse from "../components/Collapse";
-import Star from "../components/atoms/icons/Star";
-import Tags from "../components/molecules/Tags";
+import Star from "../components/Icons/Star";
+import Tags from "../components/Tags";
 import Host from "../components/Host";
 
 function Logement() {
