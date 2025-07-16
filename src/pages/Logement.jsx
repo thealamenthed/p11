@@ -5,6 +5,7 @@ import logementsData from "../data/logements.json";
 import Slideshow from "../components/Slideshow";
 import "./Logement.scss";
 import Collapse from "../components/Collapse";
+import Star from "../components/icons/Star";
 
 function Logement() {
   const {id} = useParams();
@@ -58,11 +59,8 @@ function Logement() {
                 <img className="host-picture" src={logement.host.picture} alt={logement.host.name} />
               </div>
               <div className="rating">
-                {/* Affichage des étoiles à la place du texte */}
                 {Array.from({length: 5}).map((_, i) => (
-                  <span key={i} className={i < Number(logement.rating) ? "star filled" : "star"}>
-                    ★
-                  </span>
+                  <Star key={i} filled={i < Number(logement.rating)} />
                 ))}
               </div>
             </div>
