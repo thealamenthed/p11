@@ -1,4 +1,4 @@
-import Layout from "../components/Layout";
+import Layout from "../components/layout/Layout";
 import Collapse from "../components/Collapse";
 import "./About.scss";
 

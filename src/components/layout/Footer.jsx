@@ -1,5 +1,5 @@
 import "./Footer.scss";
-import logoFooter from "../assets/LOGO_footer.png";
+import logoFooter from "../../assets/logos/LOGO_footer.png";
 function Footer() {
   return (
     <footer className="footer">

@@ -1,6 +1,6 @@
 import {useState, useEffect} from "react";
 import {useParams, Navigate} from "react-router-dom";
-import Layout from "../components/Layout";
+import Layout from "../components/layout/Layout";
 import logementsData from "../data/logements.json";
 import Slideshow from "../components/Slideshow";
 import "./Logement.scss";
