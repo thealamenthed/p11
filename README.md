@@ -84,7 +84,3 @@ Le design responsive est basé sur les maquettes Figma fournies par Paul, design
 
 - Design inspiré du brief projet Kasa (OpenClassrooms)
 - Icônes issues de [Material Icons](https://fonts.google.com/icons) et SVG personnalisés
-
----
-
-N’hésitez pas à forker, contribuer ou utiliser ce projet comme base pour votre propre plateforme de location immobilière !
