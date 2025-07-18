@@ -15,7 +15,7 @@ Kasa est une application web de location immobilière inspirée d’Airbnb. L’
 
 **Client : Kasa**
 
-Kasa est une entreprise française, leader dans la **location d’appartements entre particuliers**, existant depuis près de 10 ans.  
+Kasa leader dans la **location d’appartements entre particuliers**, existant depuis près de 10 ans.  
 Le site initial avait été développé en **ASP.NET**, avec beaucoup de code legacy devenu difficile à maintenir.
 
 La CTO, Laura, a décidé d’entamer une **refonte complète** du site avec une stack JavaScript moderne :
